@@ -1,0 +1,34 @@
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/d95e5d42-12eb-415e-9527-497fcd4c0d6a
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
+
+## Deployment
+
+Deploy to GitHub Pages (automatic):
+
+1. Push this repository to GitHub (default branch `main` or `master`).
+2. The included GitHub Actions workflow will build and deploy on push.
+
+Manual deploy (local):
+
+1. Install the `gh-pages` helper: `npm install --save-dev gh-pages`
+2. Run `npm run deploy` to publish the `dist` folder to the `gh-pages` branch.
+
+Alternative: Vercel or Netlify work out-of-the-box — connect the repo and set the build command to `npm run build` and publish directory to `dist`.
